@@ -1,18 +1,18 @@
 /* DINAMO FONTS */
 @font-face {
     font-family: Whyte;
-    src: url(../assets/fonts/Whyte-Regular-Trial.otf);
+    src: url(assets/fonts/Whyte-Regular-Trial.otf);
 }
 
 @font-face {
     font-family: Whyte;
-    src: url(../assets/fonts/Whyte-Bold-Trial.otf);
+    src: url(assets/fonts/Whyte-Bold-Trial.otf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Whyte Inktrap";
-    src: url(../assets/fonts/WhyteInktrap-Bold-Trial.otf);
+    src: url(assets/fonts/WhyteInktrap-Bold-Trial.otf);
 }
 
 /* VARIABLES */
