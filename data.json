@@ -1,0 +1,116 @@
+{
+    "products": [
+      {
+        "mens": [
+          {
+            "id": 1,
+            "title": "Rainbow logo tee",
+            "description": "If your entire wardrobe is black and at least one person in your life has told you to wear more color, this shirt is the compromise you've been waiting for.",
+            "price": 549,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "quantity": 2,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/Figma-Store-1096_1000x.jpg?v=1636599836",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/Figma-Store-1039_1000x.jpg?v=1636599836",
+              "https://store.figma.com/cdn/shop/products/Figma-Store-1108_1000x.jpg?v=1636599836",
+              "https://store.figma.com/cdn/shop/products/Figma-Store---Product-4381_1000x.jpg?v=1636323317"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Tidy up tee",
+            "description": "If only there was a Tidy Up button for our lives…sigh.",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "quantity": 1,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_01_1000x.jpg?v=1670516715",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_01_1000x.jpg?v=1670516715",
+              "https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_02_1000x.jpg?v=1670516715",
+              "https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_03_1000x.jpg?v=1670516715"
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Pixel perfect dark mode tee",
+            "description": "This tee is in dark mode, just like your design soul. Bask in the darkness and blend into your UI—if only for a moment—before the reflective logo picks up the light of a computer screen.",
+            "price": 1499,
+            "discountPercentage": 4.15,
+            "rating": 4.25,
+            "stock": 50,
+            "quantity": 4,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/IMG_9207_1000x.png?v=1651177999",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/IMG_9221_1000x.jpg?v=1651178100",
+              "https://store.figma.com/cdn/shop/products/IMG_0060_1000x.jpg?v=1652132420"
+            ]
+          }
+        ],
+        "womens": [
+          {
+            "id": 4,
+            "title": "Framework tee",
+            "description": "Work that frame of yours in a tee that screams “I’ve got pixels and I know how to use ‘em.”",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "quantity": 5,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/figma-store_framework-tee_01_1000x.jpg?v=1670515454",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/figma-store_framework-tee_01_1000x.jpg?v=1670515454",
+              "https://store.figma.com/cdn/shop/products/figma-store_framework-tee_03_1000x.jpg?v=1670597451",
+              "https://store.figma.com/cdn/shop/products/figma-store_framework-tee_04_1000x.jpg?v=1670597451"
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Dress code hat",
+            "description": "Are you casting a spell or is that just hex code? Yes.",
+            "price": 280,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "quantity": 5,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/figma-store_dress-code-hat_01_600x.png?v=1677707527",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/figma-store_dress-code-hat_01_1000x.png?v=1677707527"
+            ]
+          }
+        ],
+        "accessories": [
+          {
+            "id": 8,
+            "title": "Toolkit mug",
+            "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            "price": 499,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "quantity": 3,
+            "brand": "Figma",
+            "category": "apparels",
+            "thumbnail": "https://store.figma.com/cdn/shop/products/figma-store_tool-kit-mug_01_1000x.jpg?v=1670520016",
+            "images": [
+              "https://store.figma.com/cdn/shop/products/figma-store_tool-kit-mug_02_1000x.jpg?v=1670520015"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

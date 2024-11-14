@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Figma Store</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/app.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-section" class="bg-transparent">
+            <div class="container grid">
+                <div class="left-section flex">
+                    <div class="hamburger-menu-button">
+                        <div></div>
+                    </div>
+                    <div class="nav-buttons flex">
+                        <a href="index.html#shop" class="btn">SHOP</a>
+                        <a href="#" class="btn">ABOUT</a>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <a href="/index.html">
+                        <img src="/assets/images/logo.svg" alt="The Figma Store Logo" class="logo">
+                    </a>
+                </div>
+                <div class="right-section flex">
+                    <div class="profile">
+                        <i class="fa-regular fa-user fa-lg"></i>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html" class="btn"><span class="text">BAG</span> <span class="counter">0</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li>
+                    <a href="#shop-section">Shop</a>
+                </li>
+                <li>
+                    <a href="#about-section">About</a>
+                </li>
+            </ul>
+            <ul class="mobile-links">
+                <li>
+                    <a href="#">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact US
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms of Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Account
+                    </a>
+                </li>
+            </ul>
+        </section>   
+    </header>
+    <main id="main">
+        <section id="product-section">
+            <div class="gallery-section">
+                <div class="thumbnails">
+                    
+                </div>
+                <div class="preview">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="production-description">
+                <div class="label">Layers</div>
+                    <h1 class="product-name"></h1>
+                    <p class="size-link mobile-hide">Size Chart</p>
+                    <div class="sizes  mobile-hide">
+                      <button class="round-btn sizing-btn">S</button>  
+                      <button class="round-btn sizing-btn">M</button>  
+                      <button class="round-btn sizing-btn">L</button>  
+                      <button class="round-btn sizing-btn">XL</button>  
+                      <button class="round-btn sizing-btn">2XL</button>  
+                    </div>
+                    <div class="incrementor-decrementor mobile-hide">
+                        <button class="round-btn decrementor">-</button>
+                        <input type="number" value="0" class="product-count" min="0">
+                        <button class="round-btn incrementor">+</button>
+                    </div>
+                    <div class="product-value-container mobile-hide">
+                        <button id="add-product" class="btn">ADD <span class="product-value"></span></button>
+                    </div>
+                    <div class="product-text"></div>
+            </div>
+        </section>
+        <div id="overlay" class="close-overlay"></div>
+        <div id="submit-form" class="close-form">
+            <div class="form-head">
+                <h2>User Details</h2>
+                <div id="close-button">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                </div> 
+            </div>
+            <form action="#">
+                <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                <label for="phone">Enter Your Number: <input id="phone" name="phone" type="tel" required /></label>
+                <label for="address">Enter Your Address:
+                    <textarea id="address" name="address" rows="3" cols="30" placeholder="100 / A Wing Ekta Building"></textarea>
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="alertbox" class="hide-alertbox">
+            <div class="message"></div>
+            <div class="close-alertbox">
+                <i class="fa-solid fa-xmark fa-lg"></i>
+            </div>
+        </div>
+      
+    </main>
+    <footer id="footer" class="bg-purple">
+        <div class="footer-wrapper flex">
+            <div class="left-section flex">
+                <div>The</div>
+                <div>Figma</div>
+                <div>Store</div>
+            </div>
+            <div class="right-section flex">
+                <div class="row-1 flex">
+                    <div class="left-section">
+                        <h3>Objects That Inspire</h3>
+                    </div>
+                    <div class="right-section">
+                        <ul class="page-links">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row-2 flex">
+                    <div class="left-section">
+                        <ul class="socials">
+                            <li><a href="#" class="flex">Figma<i class="fa-solid fa-arrow-up fa-2xs"></i></a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-section">
+                        <a href="#header">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-scroller">
+            <div class="scroller-wrapper">
+                <div class="scroll-content">
+                    <span>Figma's</span>
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    <span>Marvellously</span>
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    Considered
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    Collection
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    of
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    Objects
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    For
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    Our
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    Time
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+                <div class="scroll-content">
+                    On
+                </div>
+                <div class="scroll-content">
+                    <img src="/assets/images/ticker-shape.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
