@@ -90,6 +90,12 @@ function renderCart(data) {
 
     document.querySelector('#reg-form').addEventListener('submit', submitData);
 
+    document.querySelector('.close-alertbox').addEventListener('click', () => {
+        document.getElementById('alertbox').classList.add('hide-alertbox')
+        document.getElementById('overlay').classList.add('close-overlay');
+        document.body.classList.remove('no-scroll');
+    })
+
     addDeleteEvent();
 }
 
@@ -154,9 +160,31 @@ function closeForm() {
 
 
 function submitData(e) {
-    console.log(gdgd)
     e.preventDefault();
+
+    const fName = document.getElementById('first-name').value;
+    const lName = document.getElementById('last-name').value;
+
+    const message = `Thank you for shopping with us, ${fName} ${lName}`;
+
+    localStorage.removeItem('cart');
+
+    initializeCart();
+    sendAlert(message);
+
 }
+
+function sendAlert(message) {
+    const alertbox = document.getElementById('alertbox');
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+    document.body.classList.add('no-scroll');
+    const overlay = document.getElementById('overlay');
+    alertbox.querySelector('.message').innerHTML = message;
+    alertbox.classList.remove('hide-alertbox');
+    overlay.classList.remove('close-overlay');
+}
+
 
 // Initialize the cart on page load
 initializeCart();
