@@ -86,7 +86,11 @@ function renderCart(data) {
 
     document.getElementById('checkout').addEventListener('click', userDataForm);
 
-    document.querySelector('.close-form').addEventListener('click', closeForm);
+    document.body.addEventListener('click', (event) => {
+        if (!userForm.contains(event.target)) {
+            closeForm();
+        }
+    });
 
     document.querySelector('#reg-form').addEventListener('submit', submitData);
 
@@ -142,7 +146,7 @@ function userDataForm() {
         event.stopPropagation();
     });
 
-    // Close form when clicking outside of it
+    // Close the form when clicking on the overlay (outside the form)
     overlay.addEventListener('click', closeForm);
 }
 
@@ -151,7 +155,6 @@ function closeForm() {
     userForm.classList.add('close-form');
     document.body.classList.remove('no-scroll');
 }
-
 
 
 function submitData(e) {
