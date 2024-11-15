@@ -1282,4 +1282,9 @@ header {
         font-size: 16px;
         font-weight: 200;
       }
+
+      #cart-section .cart-body.empty .msg {
+        font-size: 28px;
+        font-weight: 700;
+      }
 }  
