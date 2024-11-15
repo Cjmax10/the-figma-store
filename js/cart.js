@@ -168,8 +168,13 @@ function submitData(e) {
     const message = `Thank you for shopping with us, ${fName} ${lName}`;
 
     localStorage.removeItem('cart');
+    
+    closeForm();
+
+    document.getElementById('reg-form').reset();
 
     initializeCart();
+    
     sendAlert(message);
 
 }
