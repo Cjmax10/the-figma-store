@@ -1254,6 +1254,10 @@ header {
         object-fit: cover;
         border-radius: 15px;
     }
+
+    #product-section .gallery-section .thumbnails .thumbnail.selected {
+        border: 2px solid var(--black);
+    }
     
     #product-section .gallery-section .preview {
         display: none;
