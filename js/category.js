@@ -27,7 +27,7 @@ function displayData(data) {
     itemsToDisplay.forEach(item => {
         const card =   `<div class="card">
                             <div class="category-img">
-                                <a href="http://localhost:5500/product.html?category=${category}&id=${item.id}">
+                                <a href="https://cjmax10.github.io/the-figma-store/product.html?category=${category}&id=${item.id}">
                                     <img src=${item.thumbnail} alt="Mens">
                                 </a>
                             </div>
