@@ -121,6 +121,8 @@ function deleteItemFromLS(title) {
 function userDataForm() {
     overlay.classList.remove('close-overlay');
     userForm.classList.remove('close-form');
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     document.body.classList.add('no-scroll');
 }
 
