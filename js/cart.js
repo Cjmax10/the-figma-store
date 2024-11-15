@@ -118,12 +118,32 @@ function deleteItemFromLS(title) {
     initializeCart();
 }
 
+// function userDataForm() {
+//     overlay.classList.remove('close-overlay');
+//     userForm.classList.remove('close-form');
+//     // document.body.scrollTop = 0;
+//     // document.documentElement.scrollTop = 0;
+//     document.body.classList.add('no-scroll');
+// }
+
+// function closeForm() {
+//     overlay.classList.add('close-overlay');
+//     userForm.classList.add('close-form');
+//     document.body.classList.remove('no-scroll');
+// }
+
 function userDataForm() {
     overlay.classList.remove('close-overlay');
     userForm.classList.remove('close-form');
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
     document.body.classList.add('no-scroll');
+
+    // Prevent clicks inside the form from closing it
+    userForm.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+
+    // Close form when clicking outside of it
+    overlay.addEventListener('click', closeForm);
 }
 
 function closeForm() {
@@ -131,6 +151,8 @@ function closeForm() {
     userForm.classList.add('close-form');
     document.body.classList.remove('no-scroll');
 }
+
+
 
 function submitData(e) {
     console.log(gdgd)
