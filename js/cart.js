@@ -86,10 +86,10 @@ function renderCart(data) {
 
     document.getElementById('checkout').addEventListener('click', userDataForm);
 
-    document.body.addEventListener('click', (event) => {
-        if (!userForm.contains(event.target)) {
+    document.querySelector('.close-form').addEventListener('click', (e) => {
+       if(e.target.getAttribute('id') == 'close-button') {
             closeForm();
-        }
+       }
     });
 
     document.querySelector('#reg-form').addEventListener('submit', submitData);
