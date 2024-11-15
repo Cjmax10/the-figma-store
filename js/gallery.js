@@ -74,6 +74,7 @@ function createGallery() {
     document.querySelector('.close-alertbox').addEventListener('click', () => {
         document.getElementById('alertbox').classList.add('hide-alertbox')
         document.getElementById('overlay').classList.add('close-overlay');
+        document.body.classList.remove('no-scroll');
     })
 
     // CREATE GALLERY FUNCTIONALITY
@@ -254,6 +255,7 @@ function addToCart() {
 
 function sendAlert(message) {
     const alertbox = document.getElementById('alertbox');
+    document.body.classList.add('no-scroll');
     const overlay = document.getElementById('overlay');
     alertbox.querySelector('.message').innerHTML = message;
     alertbox.classList.remove('hide-alertbox');

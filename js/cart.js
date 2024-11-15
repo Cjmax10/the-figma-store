@@ -121,11 +121,13 @@ function deleteItemFromLS(title) {
 function userDataForm() {
     overlay.classList.remove('close-overlay');
     userForm.classList.remove('close-form');
+    document.body.classList.add('no-scroll');
 }
 
 function closeForm() {
     overlay.classList.add('close-overlay');
     userForm.classList.add('close-form');
+    document.body.classList.remove('no-scroll');
 }
 
 function submitData(e) {
