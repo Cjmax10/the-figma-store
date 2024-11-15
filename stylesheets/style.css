@@ -296,7 +296,7 @@ header {
 
 #hero-section .scroller {
     gap: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #hero-section .scroller .scroll-item {
@@ -307,8 +307,8 @@ header {
 }
 
 #hero-section .scroller .scroll-item svg{
-    height: 100%;
-    width: auto;
+    height: 100% !important;
+    width: auto !important;
     stroke: var(--black);
     stroke-width: 4px;
 }
@@ -1088,7 +1088,7 @@ header {
         
     /* HERO SECTION */
     #hero-section {
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     #hero-section .scroll-wrapper {
