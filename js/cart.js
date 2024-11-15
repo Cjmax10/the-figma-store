@@ -86,11 +86,7 @@ function renderCart(data) {
 
     document.getElementById('checkout').addEventListener('click', userDataForm);
 
-    document.querySelector('.close-form').addEventListener('click', (e) => {
-       if(e.target.getAttribute('id') == 'close-button') {
-            closeForm();
-       }
-    });
+    document.querySelector('#close-button').addEventListener('click', closeForm);
 
     document.querySelector('#reg-form').addEventListener('submit', submitData);
 
