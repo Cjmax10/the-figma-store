@@ -255,8 +255,8 @@ function addToCart() {
 
 function sendAlert(message) {
     const alertbox = document.getElementById('alertbox');
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
     document.body.classList.add('no-scroll');
     const overlay = document.getElementById('overlay');
     alertbox.querySelector('.message').innerHTML = message;
